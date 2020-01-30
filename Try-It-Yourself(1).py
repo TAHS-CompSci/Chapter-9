@@ -370,20 +370,15 @@ class Die():
     import random
     def __init__(self, sides = 6):
         self.sides = sides
-    def roll_die(self):
-        die_roll = random.randint(1, self.sides)
-        print(die_roll)
+    def roll_die(self, range_roll):
+        rolls_list = []
+        for roll in range(range_roll):
+            rolls_list += [random.randint(1,self.sides)]
+        print(rolls_list)
 
 six_die = Die(6)
-for roll in range(10):
-    six_die.roll_die()
-
-six_die = Die(10)
-for roll in range(10):
-    six_die.roll_die()
-
-six_die = Die(20)
-for roll in range(10):
-    six_die.roll_die()
-    
-
+six_die.roll_die(10)
+ten_die = Die(10)
+ten_die.roll_die(10)
+twenty_die = Die(20)
+twenty_die.roll_die(10)
