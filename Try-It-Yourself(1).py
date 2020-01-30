@@ -350,10 +350,9 @@ admin.priviliges.show_priviliges()
 Programmer: Drayzdin Thompson
 Description: import function through multiple files
 '''
-from user import User
 from admin import Admin
 
-drayzdin = Admin('Drayzdin', 'Thompson', 'Aberration11', 'Drayzdin02', 'Male')
+admin = Admin('Drayzdin', 'Thompson', 'Aberration11', 'Drayzdin02', 'Male')
 admin.priviliges.show_priviliges()
 
 
