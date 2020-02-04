@@ -1,0 +1,55 @@
+Classes or known as object oriented programming
+Classes represent real world objects
+When writing a class you define said object and make its behavior 
+
+When creating a class, you use code like this:
+class Object():               #Notice the object we are describing is capitalized
+    def __init__(self, desciptive_element):              # two underscores for intitialization
+        self.descriptve_element = descriptive_element   
+    
+    def function(self)         #functions for the class object to inherit
+
+Instances are made to inherit the class functions
+ex. my_dog = Dog('Willie', 6)
+
+Attributes are the parameters we give an instance, to access these attribute we use dot notation
+ex. my_dog.name
+
+We use classes to call methods which are the defined functions in a class
+ex. my_dog.roll_over()
+
+You can make as many instances you want
+
+It is possible to make attributes within the code that are set
+To change the value of this attribute you will need to write some code
+ex. my_new_car.odometer_reading = 23
+it is also possible to do this by calling a method
+
+With classes it is possible to make a child class
+to do this you want to make a new class but add the parent class in the parameter
+then you want to initialize and add super(). to make a connection
+ex. class ElectricCar(Car):
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+this allows the child class to access methods in the parent class and create some of its own
+
+You can override any parent method by making a method with the same name in the child class
+you can make as many classes as you want and call them all to one main class 
+ex.
+class Electric_car(car):
+
+class Battery():
+
+my_testla.battery.describe_battery()
+
+Importing classes is a great way to call code from somewhere lese and keep organized 
+ex. import random
+
+it is reccomended that you be specific when programming se here is a good example
+ex. from car import ElectricCar # car is the py document and electric_car the class
+
+It is possible to import multiple classes from one module
+ex. from car import Car, ElectricCar # you do this with the comma
+
+
+
